@@ -20,10 +20,7 @@ This repo: [https://github.com/code4jc/jcreval/](https://github.com/code4jc/jcre
 ## Preparation & Analysis Methods
 
 1. PAMS PIN column added using method specified in [http://njwebmap.state.nj.us/NJGeoWeb/Webpages/Info/Help/PAMSPIN.html](http://njwebmap.state.nj.us/NJGeoWeb/Webpages/Info/Help/PAMSPIN.html). This is a unique property identifier used to join the reval data with the parcel basemap.
-2. TO DO
-  -fix PAMS_PIN concatentation for parcels that have a QCODE (mostly multi-unit parcels like condos) 
-  -strip $ and , from all the money fields (e.g. convert strings to numbers)
-3. TBD. Much more to come.
+2. TBD.
 
 ## Methods
 
