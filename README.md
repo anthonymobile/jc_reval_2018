@@ -15,7 +15,7 @@ This repo: [https://github.com/code4jc/jcreval/](https://github.com/code4jc/jcre
 
 
 - NJGIN (New Jersey Geographic Information Network)
-  - Hudson country [parcel maps](https://njgin.state.nj.us/NJ_NJGINExplorer/IW.jsp?DLayer=Parcels%20by%20County/Muni)
+  - Hudson county [parcel maps](https://njgin.state.nj.us/NJ_NJGINExplorer/IW.jsp?DLayer=Parcels%20by%20County/Muni)
   
 ## Preparation & Analysis Methods
 
