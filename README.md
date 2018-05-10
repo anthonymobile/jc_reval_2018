@@ -19,8 +19,10 @@ This repo: [https://github.com/code4jc/jcreval/](https://github.com/code4jc/jcre
   
 ## Preparation & Analysis Methods
 
-1. PAMS PIN column added using method specified in [http://njwebmap.state.nj.us/NJGeoWeb/Webpages/Info/Help/PAMSPIN.html](http://njwebmap.state.nj.us/NJGeoWeb/Webpages/Info/Help/PAMSPIN.html). This is a unique property identifier used to join the reval data with the parcel basemap.
-2. TBD.
+assessment_cleaner.py will take the file from Appraisal Systems and:
+1. computes PAMS PIN column  using method specified in [http://njwebmap.state.nj.us/NJGeoWeb/Webpages/Info/Help/PAMSPIN.html](http://njwebmap.state.nj.us/NJGeoWeb/Webpages/Info/Help/PAMSPIN.html). This is a unique property identifier used to join the reval data with the parcel basemap.
+2. removes $s and ,s from the money fields.
+3. converts files from XLS to CSV for use in GIS and pandas.
 
 ## Methods
 
