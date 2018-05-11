@@ -27,6 +27,14 @@ if args.infile.find('.csv') != -1:
 elif args.infile.find('.xlxs'):
 		data_frame = pd.read_excel(args.infile, 'released as of April 18th', index_col=None)
 
+# 3.
+
+for col,type in zip(data_frame.columns, data_frame.dtypes):
+		print(type)
+		if type == np.dtype('O'):
+				print(col)
+				data_frame[col] = data_frame[col].apply(func=lambda x : str(x).replace('$','').replace(',',''))
+
 # 4. compute the Pams_pin field
 
 # 5. write the new file
