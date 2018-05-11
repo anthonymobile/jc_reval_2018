@@ -30,15 +30,22 @@ else:
     print('unrecognized file type')
     sys.exit(-2)
 
-# 3.
+# 2. clean the money fields up
 
 for col,type in zip(data_frame.columns, data_frame.dtypes):
     if type == np.dtype('O'):
         data_frame[col] = data_frame[col].apply(func=lambda x : str(x).replace('$','').replace(',',''))
 
-# 4. compute the Pams_pin field
+# 3. compute the Pams_pin field
 
-# 5. write the new file
+"""
+# the general idea, need to parse these out and do this in the loop above i suppose
+if not data_frame["QualCode(s)"]:
+    qcode=data_frame["QualCode(s)"]
+data_frame['pams_pin_new']='0906_'+data_frame['blockno'].map(str)+'_'+data_frame['lotno'].map(str)+'_'+qcode
+"""
+
+# 4. write the new file
 
 if args.outfile:
     data_frame.to_csv(args.outfile, index=False)
