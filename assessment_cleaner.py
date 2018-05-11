@@ -30,9 +30,7 @@ elif args.infile.find('.xlxs'):
 # 3.
 
 for col,type in zip(data_frame.columns, data_frame.dtypes):
-		print(type)
 		if type == np.dtype('O'):
-				print(col)
 				data_frame[col] = data_frame[col].apply(func=lambda x : str(x).replace('$','').replace(',',''))
 
 # 4. compute the Pams_pin field
