@@ -26,6 +26,9 @@ if args.infile.find('.csv') != -1:
     data_frame = pd.read_csv(args.infile)
 elif args.infile.find('.xlxs'):
     data_frame = pd.read_excel(args.infile, 'released as of April 18th', index_col=None)
+else:
+    print('unrecognized file type')
+    sys.exit(-2)
 
 # 3.
 
