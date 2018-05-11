@@ -24,6 +24,12 @@ assessment_cleaner.py will take the file from Appraisal Systems and:
 2. removes $s and ,s from the money fields.
 3. converts files from XLS to CSV for use in GIS and pandas.
 
+e.g.
+
+```
+python assessment_cleaner.py --infile data/proposed-assessments-as-of-april-18th.xlsx --outfile data/proposed-assessments-as-of-april-18th.csv
+
+```
 ## Methods
 
 1. Mostly using QGIS for visualization.
