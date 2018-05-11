@@ -13,8 +13,8 @@ parser.add_argument('--outfile', dest='outfile', default=None, help="CSV file to
 args = parser.parse_args()
 
 if not args.infile:
-		print('please provide inpute file')
-		sys.exit(-1)
+    print('please provide inpute file')
+    sys.exit(-1)
 
 print ('infile: %s' % args.infile)
 print ('outfile: %s' % args.outfile)
@@ -23,20 +23,20 @@ print ('outfile: %s' % args.outfile)
 # 1. read data - csv or xlsx 
 
 if args.infile.find('.csv') != -1:
-		data_frame = pd.read_csv(args.infile)
+    data_frame = pd.read_csv(args.infile)
 elif args.infile.find('.xlxs'):
-		data_frame = pd.read_excel(args.infile, 'released as of April 18th', index_col=None)
+    data_frame = pd.read_excel(args.infile, 'released as of April 18th', index_col=None)
 
 # 3.
 
 for col,type in zip(data_frame.columns, data_frame.dtypes):
-		if type == np.dtype('O'):
-				data_frame[col] = data_frame[col].apply(func=lambda x : str(x).replace('$','').replace(',',''))
+    if type == np.dtype('O'):
+        data_frame[col] = data_frame[col].apply(func=lambda x : str(x).replace('$','').replace(',',''))
 
 # 4. compute the Pams_pin field
 
 # 5. write the new file
 
 if args.outfile:
-		data_frame.to_csv(args.outfile, index=False)
+    data_frame.to_csv(args.outfile, index=False)
 
