@@ -1,0 +1,1593 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="3.0.2-Girona">
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <proj4>+proj=tmerc +lat_0=38.83333333333334 +lon_0=-74.5 +k=0.9999 +x_0=150000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs</proj4>
+      <srsid>242</srsid>
+      <srid>2260</srid>
+      <authid>EPSG:2260</authid>
+      <description>NAD83 / New York East (ftUS)</description>
+      <projectionacronym>tmerc</projectionacronym>
+      <ellipsoidacronym>GRS80</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties/>
+    <layer-tree-layer providerKey="ogr" id="parcels_shp_jc_25b9f1ae_d5eb_425c_90f8_51bd05a12bd7" expanded="1" name="Ratio 2018 to 2017 assessed value" checked="Qt::Checked" source="../parcels_shp_jc/parcels_shp_jc.shp">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer providerKey="delimitedtext" id="proposed_assessments_as_of_april_18th_eb1429cb_78e9_4bf0_a4e9_d9c7a78d7e9f" expanded="1" name="proposed-assessments-as-of-april-18th" checked="Qt::Checked" source="file:///Users/anthonytownsend/Dropbox/Desktop/code/jcreval/data/proposed-assessments-as-of-april-18th.csv?type=csv&amp;geomType=none&amp;subsetIndex=no&amp;watchFile=no">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer providerKey="ogr" id="parcels_shp_jc_af4686ec_892f_49a6_b3b3_07893d189259" expanded="1" name="parcels_shp_jc" checked="Qt::Checked" source="../parcels_shp_jc/parcels_shp_jc.shp">
+      <customproperties/>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>proposed_assessments_as_of_april_18th_eb1429cb_78e9_4bf0_a4e9_d9c7a78d7e9f</item>
+      <item>parcels_shp_jc_25b9f1ae_d5eb_425c_90f8_51bd05a12bd7</item>
+      <item>parcels_shp_jc_af4686ec_892f_49a6_b3b3_07893d189259</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings unit="1" mode="2" type="1" tolerance="12" enabled="0" intersection-snapping="0">
+    <individual-layer-settings>
+      <layer-setting type="1" id="parcels_shp_jc_af4686ec_892f_49a6_b3b3_07893d189259" tolerance="12" units="1" enabled="0"/>
+      <layer-setting type="1" id="parcels_shp_jc_25b9f1ae_d5eb_425c_90f8_51bd05a12bd7" tolerance="12" units="1" enabled="0"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <mapcanvas name="theMapCanvas" annotationsVisible="1">
+    <units>feet</units>
+    <extent>
+      <xmin>588814.83090768463443965</xmin>
+      <ymin>673007.0656983609078452</ymin>
+      <xmax>638182.60297964874189347</xmax>
+      <ymax>703024.88781882531475276</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=tmerc +lat_0=38.83333333333334 +lon_0=-74.5 +k=0.9999 +x_0=150000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs</proj4>
+        <srsid>242</srsid>
+        <srid>2260</srid>
+        <authid>EPSG:2260</authid>
+        <description>NAD83 / New York East (ftUS)</description>
+        <projectionacronym>tmerc</projectionacronym>
+        <ellipsoidacronym>GRS80</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <legend updateDrawingOrder="true">
+    <legendlayer drawingOrder="-1" showFeatureCount="0" name="Ratio 2018 to 2017 assessed value" open="true" checked="Qt::Checked">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="parcels_shp_jc_25b9f1ae_d5eb_425c_90f8_51bd05a12bd7" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" showFeatureCount="0" name="proposed-assessments-as-of-april-18th" open="true" checked="Qt::Checked">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="proposed_assessments_as_of_april_18th_eb1429cb_78e9_4bf0_a4e9_d9c7a78d7e9f" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" showFeatureCount="0" name="parcels_shp_jc" open="true" checked="Qt::Checked">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="parcels_shp_jc_af4686ec_892f_49a6_b3b3_07893d189259" visible="1"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D/>
+  <mapcanvas name="mAreaCanvas" annotationsVisible="1">
+    <units>degrees</units>
+    <extent>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>0</xmax>
+      <ymax>0</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <mapcanvas name="mAreaCanvas" annotationsVisible="1">
+    <units>degrees</units>
+    <extent>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>0</xmax>
+      <ymax>0</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <mapcanvas name="mAreaCanvas" annotationsVisible="1">
+    <units>degrees</units>
+    <extent>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>0</xmax>
+      <ymax>0</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <projectlayers>
+    <maplayer simplifyAlgorithm="0" simplifyMaxScale="1" maxScale="0" minScale="1e+8" type="vector" autoRefreshEnabled="0" simplifyLocal="1" simplifyDrawingHints="1" refreshOnNotifyMessage="" simplifyDrawingTol="1" labelsEnabled="0" refreshOnNotifyEnabled="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" autoRefreshTime="0" readOnly="0">
+      <extent>
+        <xmin>600845.33588550239801407</xmin>
+        <ymin>668162.23935867846012115</ymin>
+        <xmax>623698.74030983820557594</xmax>
+        <ymax>705319.23984767496585846</ymax>
+      </extent>
+      <id>parcels_shp_jc_25b9f1ae_d5eb_425c_90f8_51bd05a12bd7</id>
+      <datasource>../parcels_shp_jc/parcels_shp_jc.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Ratio 2018 to 2017 assessed value</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=tmerc +lat_0=38.83333333333334 +lon_0=-74.5 +k=0.9999 +x_0=150000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs</proj4>
+          <srsid>242</srsid>
+          <srid>2260</srid>
+          <authid>EPSG:2260</authid>
+          <description>NAD83 / New York East (ftUS)</description>
+          <projectionacronym>tmerc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="0" maxz="0" dimensions="2" maxx="0" crs="" minz="0" miny="0" minx="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins>
+        <join memoryCache="1" joinFieldName="pams_pin" upsertOnEdit="0" targetFieldName="PAMS_PIN" editable="0" joinLayerId="proposed_assessments_as_of_april_18th_eb1429cb_78e9_4bf0_a4e9_d9c7a78d7e9f" dynamicForm="0" cascadedDelete="0"/>
+      </vectorjoins>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <renderer-v2 attr="&quot;proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Total&quot;  /  &quot;proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Total&quot; " type="graduatedSymbol" graduatedMethod="GraduatedColor" symbollevels="0" forceraster="0" enableorderby="0">
+        <ranges>
+          <range lower="1.138581652569941" label=" 1.1 - 3.1 " upper="3.091160528691520" symbol="0" render="true"/>
+          <range lower="3.091160528691520" label=" 3.1 - 3.7 " upper="3.658295896975142" symbol="1" render="true"/>
+          <range lower="3.658295896975142" label=" 3.7 - 4.1 " upper="4.131853737228894" symbol="2" render="true"/>
+          <range lower="4.131853737228894" label=" 4.1 - 4.6 " upper="4.612848269742679" symbol="3" render="true"/>
+          <range lower="4.612848269742679" label=" 4.6 - 5.2 " upper="5.197401714824460" symbol="4" render="true"/>
+          <range lower="5.197401714824460" label=" 5.2 - 6.2 " upper="6.234400000000000" symbol="5" render="true"/>
+          <range lower="6.234400000000000" label=" 6.2 - 140.9 " upper="140.871794871794862" symbol="6" render="true"/>
+        </ranges>
+        <symbols>
+          <symbol type="fill" name="0" alpha="1" clip_to_extent="1">
+            <layer pass="0" class="SimpleFill" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="255,255,255,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol type="fill" name="1" alpha="1" clip_to_extent="1">
+            <layer pass="0" class="SimpleFill" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="255,213,213,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol type="fill" name="2" alpha="1" clip_to_extent="1">
+            <layer pass="0" class="SimpleFill" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="255,170,170,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol type="fill" name="3" alpha="1" clip_to_extent="1">
+            <layer pass="0" class="SimpleFill" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="255,128,128,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol type="fill" name="4" alpha="1" clip_to_extent="1">
+            <layer pass="0" class="SimpleFill" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="255,85,85,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol type="fill" name="5" alpha="1" clip_to_extent="1">
+            <layer pass="0" class="SimpleFill" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="255,42,42,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol type="fill" name="6" alpha="1" clip_to_extent="1">
+            <layer pass="0" class="SimpleFill" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="255,0,0,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <source-symbol>
+          <symbol type="fill" name="0" alpha="1" clip_to_extent="1">
+            <layer pass="0" class="SimpleFill" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="132,226,142,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </source-symbol>
+        <colorramp type="gradient" name="[source]">
+          <prop k="color1" v="255,255,255,255"/>
+          <prop k="color2" v="255,0,0,255"/>
+          <prop k="discrete" v="0"/>
+          <prop k="rampType" v="gradient"/>
+        </colorramp>
+        <mode name="quantile"/>
+        <rotation/>
+        <sizescale/>
+        <labelformat decimalplaces="2" trimtrailingzeroes="false" format=" %1 - %2 "/>
+      </renderer-v2>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory width="15" sizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" penAlpha="255" rotationOffset="270" backgroundAlpha="255" labelPlacementMethod="XHeight" minimumSize="0" sizeScale="3x:0,0,0,0,0,0" barWidth="5" enabled="0" penWidth="0" minScaleDenominator="0" diagramOrientation="Up" height="15" scaleBasedVisibility="0" lineSizeType="MM" penColor="#000000" opacity="1" maxScaleDenominator="1e+8" backgroundColor="#ffffff">
+          <fontProperties description=".SF NS Text,13,-1,5,50,0,0,0,0,0" style=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings zIndex="0" priority="0" dist="0" obstacle="0" showAll="1" placement="0" linePlacementFlags="18">
+        <properties>
+          <Option type="Map">
+            <Option type="QString" name="name" value=""/>
+            <Option name="properties"/>
+            <Option type="QString" name="type" value="collection"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <fieldConfiguration>
+        <field name="PAMS_PIN">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MUN">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="BLOCK">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LOT">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="QCODE">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LASTUPDATE">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Shape_Leng">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Shape_Area">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_BlockNo">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_LotNo">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_QualCode(s)">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_PropLocation">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_PropClass(s)">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_SalesDate">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_SalePrice">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_NU&#xa;Code">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Taxable">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Exempt">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Total">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_2017 Taxes&#xa;Total">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_VCS">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_Year&#xa;Built">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_Design">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_Square&#xa;Footage">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Taxable">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Exempt">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Total">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_2018 Taxes&#xa;Estimated">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="proposed-assessments-as-of-april-18th_pams_pin_temp">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="PAMS_PIN"/>
+        <alias index="1" name="" field="MUN"/>
+        <alias index="2" name="" field="BLOCK"/>
+        <alias index="3" name="" field="LOT"/>
+        <alias index="4" name="" field="QCODE"/>
+        <alias index="5" name="" field="LASTUPDATE"/>
+        <alias index="6" name="" field="Shape_Leng"/>
+        <alias index="7" name="" field="Shape_Area"/>
+        <alias index="8" name="" field="proposed-assessments-as-of-april-18th_BlockNo"/>
+        <alias index="9" name="" field="proposed-assessments-as-of-april-18th_LotNo"/>
+        <alias index="10" name="" field="proposed-assessments-as-of-april-18th_QualCode(s)"/>
+        <alias index="11" name="" field="proposed-assessments-as-of-april-18th_PropLocation"/>
+        <alias index="12" name="" field="proposed-assessments-as-of-april-18th_PropClass(s)"/>
+        <alias index="13" name="" field="proposed-assessments-as-of-april-18th_SalesDate"/>
+        <alias index="14" name="" field="proposed-assessments-as-of-april-18th_SalePrice"/>
+        <alias index="15" name="" field="proposed-assessments-as-of-april-18th_NU&#xa;Code"/>
+        <alias index="16" name="" field="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Taxable"/>
+        <alias index="17" name="" field="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Exempt"/>
+        <alias index="18" name="" field="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Total"/>
+        <alias index="19" name="" field="proposed-assessments-as-of-april-18th_2017 Taxes&#xa;Total"/>
+        <alias index="20" name="" field="proposed-assessments-as-of-april-18th_VCS"/>
+        <alias index="21" name="" field="proposed-assessments-as-of-april-18th_Year&#xa;Built"/>
+        <alias index="22" name="" field="proposed-assessments-as-of-april-18th_Design"/>
+        <alias index="23" name="" field="proposed-assessments-as-of-april-18th_Square&#xa;Footage"/>
+        <alias index="24" name="" field="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Taxable"/>
+        <alias index="25" name="" field="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Exempt"/>
+        <alias index="26" name="" field="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Total"/>
+        <alias index="27" name="" field="proposed-assessments-as-of-april-18th_2018 Taxes&#xa;Estimated"/>
+        <alias index="28" name="" field="proposed-assessments-as-of-april-18th_pams_pin_temp"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default applyOnUpdate="0" expression="" field="PAMS_PIN"/>
+        <default applyOnUpdate="0" expression="" field="MUN"/>
+        <default applyOnUpdate="0" expression="" field="BLOCK"/>
+        <default applyOnUpdate="0" expression="" field="LOT"/>
+        <default applyOnUpdate="0" expression="" field="QCODE"/>
+        <default applyOnUpdate="0" expression="" field="LASTUPDATE"/>
+        <default applyOnUpdate="0" expression="" field="Shape_Leng"/>
+        <default applyOnUpdate="0" expression="" field="Shape_Area"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_BlockNo"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_LotNo"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_QualCode(s)"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_PropLocation"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_PropClass(s)"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_SalesDate"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_SalePrice"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_NU&#xa;Code"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Taxable"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Exempt"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Total"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_2017 Taxes&#xa;Total"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_VCS"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_Year&#xa;Built"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_Design"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_Square&#xa;Footage"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Taxable"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Exempt"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Total"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_2018 Taxes&#xa;Estimated"/>
+        <default applyOnUpdate="0" expression="" field="proposed-assessments-as-of-april-18th_pams_pin_temp"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="PAMS_PIN"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="MUN"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="BLOCK"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="LOT"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="QCODE"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="LASTUPDATE"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="Shape_Leng"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="Shape_Area"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_BlockNo"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_LotNo"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_QualCode(s)"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_PropLocation"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_PropClass(s)"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_SalesDate"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_SalePrice"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_NU&#xa;Code"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Taxable"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Exempt"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Total"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_2017 Taxes&#xa;Total"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_VCS"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_Year&#xa;Built"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_Design"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_Square&#xa;Footage"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Taxable"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Exempt"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Total"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_2018 Taxes&#xa;Estimated"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="proposed-assessments-as-of-april-18th_pams_pin_temp"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" exp="" field="PAMS_PIN"/>
+        <constraint desc="" exp="" field="MUN"/>
+        <constraint desc="" exp="" field="BLOCK"/>
+        <constraint desc="" exp="" field="LOT"/>
+        <constraint desc="" exp="" field="QCODE"/>
+        <constraint desc="" exp="" field="LASTUPDATE"/>
+        <constraint desc="" exp="" field="Shape_Leng"/>
+        <constraint desc="" exp="" field="Shape_Area"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_BlockNo"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_LotNo"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_QualCode(s)"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_PropLocation"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_PropClass(s)"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_SalesDate"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_SalePrice"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_NU&#xa;Code"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Taxable"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Exempt"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Total"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_2017 Taxes&#xa;Total"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_VCS"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_Year&#xa;Built"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_Design"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_Square&#xa;Footage"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Taxable"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Exempt"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Total"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_2018 Taxes&#xa;Estimated"/>
+        <constraint desc="" exp="" field="proposed-assessments-as-of-april-18th_pams_pin_temp"/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+        <columns>
+          <column width="-1" type="field" name="PAMS_PIN" hidden="0"/>
+          <column width="-1" type="field" name="MUN" hidden="0"/>
+          <column width="-1" type="field" name="BLOCK" hidden="0"/>
+          <column width="-1" type="field" name="LOT" hidden="0"/>
+          <column width="-1" type="field" name="QCODE" hidden="0"/>
+          <column width="-1" type="field" name="LASTUPDATE" hidden="0"/>
+          <column width="-1" type="field" name="Shape_Leng" hidden="0"/>
+          <column width="-1" type="field" name="Shape_Area" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_BlockNo" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_LotNo" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_QualCode(s)" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_PropLocation" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_PropClass(s)" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_SalesDate" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_SalePrice" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_NU&#xa;Code" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Taxable" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Exempt" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Total" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_2017 Taxes&#xa;Total" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_VCS" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_Year&#xa;Built" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_Design" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_Square&#xa;Footage" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Taxable" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Exempt" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Total" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_2018 Taxes&#xa;Estimated" hidden="0"/>
+          <column width="-1" type="field" name="proposed-assessments-as-of-april-18th_pams_pin_temp" hidden="0"/>
+          <column width="-1" type="actions" hidden="1"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field name="BLOCK" editable="1"/>
+        <field name="LASTUPDATE" editable="1"/>
+        <field name="LOT" editable="1"/>
+        <field name="MUN" editable="1"/>
+        <field name="PAMS_PIN" editable="1"/>
+        <field name="QCODE" editable="1"/>
+        <field name="Shape_Area" editable="1"/>
+        <field name="Shape_Leng" editable="1"/>
+        <field name="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Exempt" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Taxable" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Total" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_2017 Taxes&#xa;Total" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Exempt" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Taxable" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Total" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_2018 Taxes&#xa;Estimated" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_BlockNo" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_Design" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_LotNo" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_NU&#xa;Code" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_PropClass(s)" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_PropLocation" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_QualCode(s)" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_SalePrice" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_SalesDate" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_Square&#xa;Footage" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_VCS" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_Year&#xa;Built" editable="0"/>
+        <field name="proposed-assessments-as-of-april-18th_pams_pin_temp" editable="0"/>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="BLOCK"/>
+        <field labelOnTop="0" name="LASTUPDATE"/>
+        <field labelOnTop="0" name="LOT"/>
+        <field labelOnTop="0" name="MUN"/>
+        <field labelOnTop="0" name="PAMS_PIN"/>
+        <field labelOnTop="0" name="QCODE"/>
+        <field labelOnTop="0" name="Shape_Area"/>
+        <field labelOnTop="0" name="Shape_Leng"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Exempt"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Taxable"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_2017 Assmt&#xa;Total"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_2017 Taxes&#xa;Total"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Exempt"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Taxable"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_2018 Assmt&#xa;Total"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_2018 Taxes&#xa;Estimated"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_BlockNo"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_Design"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_LotNo"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_NU&#xa;Code"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_PropClass(s)"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_PropLocation"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_QualCode(s)"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_SalePrice"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_SalesDate"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_Square&#xa;Footage"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_VCS"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_Year&#xa;Built"/>
+        <field labelOnTop="0" name="proposed-assessments-as-of-april-18th_pams_pin_temp"/>
+      </labelOnTop>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields/>
+      <previewExpression>PAMS_PIN</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" simplifyMaxScale="1" maxScale="0" minScale="1e+8" type="vector" autoRefreshEnabled="0" simplifyLocal="1" simplifyDrawingHints="1" refreshOnNotifyMessage="" simplifyDrawingTol="1" labelsEnabled="0" refreshOnNotifyEnabled="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" autoRefreshTime="0" readOnly="0">
+      <extent>
+        <xmin>600845.33588550239801407</xmin>
+        <ymin>668162.23935867846012115</ymin>
+        <xmax>623698.74030983820557594</xmax>
+        <ymax>705319.23984767496585846</ymax>
+      </extent>
+      <id>parcels_shp_jc_af4686ec_892f_49a6_b3b3_07893d189259</id>
+      <datasource>../parcels_shp_jc/parcels_shp_jc.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>parcels_shp_jc</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=tmerc +lat_0=38.83333333333334 +lon_0=-74.5 +k=0.9999 +x_0=150000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=us-ft +no_defs</proj4>
+          <srsid>242</srsid>
+          <srid>2260</srid>
+          <authid>EPSG:2260</authid>
+          <description>NAD83 / New York East (ftUS)</description>
+          <projectionacronym>tmerc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="0" maxz="0" dimensions="2" maxx="0" crs="" minz="0" miny="0" minx="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <renderer-v2 type="singleSymbol" symbollevels="0" forceraster="0" enableorderby="0">
+        <symbols>
+          <symbol type="fill" name="0" alpha="1" clip_to_extent="1">
+            <layer pass="0" class="SimpleFill" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="248,252,247,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="169,169,169,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory width="15" sizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" penAlpha="255" rotationOffset="270" backgroundAlpha="255" labelPlacementMethod="XHeight" minimumSize="0" sizeScale="3x:0,0,0,0,0,0" barWidth="5" enabled="0" penWidth="0" minScaleDenominator="0" diagramOrientation="Up" height="15" scaleBasedVisibility="0" lineSizeType="MM" penColor="#000000" opacity="1" maxScaleDenominator="1e+8" backgroundColor="#ffffff">
+          <fontProperties description=".SF NS Text,13,-1,5,50,0,0,0,0,0" style=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings zIndex="0" priority="0" dist="0" obstacle="0" showAll="1" placement="0" linePlacementFlags="18">
+        <properties>
+          <Option type="Map">
+            <Option type="QString" name="name" value=""/>
+            <Option name="properties"/>
+            <Option type="QString" name="type" value="collection"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <fieldConfiguration>
+        <field name="PAMS_PIN">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MUN">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="BLOCK">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LOT">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="QCODE">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LASTUPDATE">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Shape_Leng">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Shape_Area">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="PAMS_PIN"/>
+        <alias index="1" name="" field="MUN"/>
+        <alias index="2" name="" field="BLOCK"/>
+        <alias index="3" name="" field="LOT"/>
+        <alias index="4" name="" field="QCODE"/>
+        <alias index="5" name="" field="LASTUPDATE"/>
+        <alias index="6" name="" field="Shape_Leng"/>
+        <alias index="7" name="" field="Shape_Area"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default applyOnUpdate="0" expression="" field="PAMS_PIN"/>
+        <default applyOnUpdate="0" expression="" field="MUN"/>
+        <default applyOnUpdate="0" expression="" field="BLOCK"/>
+        <default applyOnUpdate="0" expression="" field="LOT"/>
+        <default applyOnUpdate="0" expression="" field="QCODE"/>
+        <default applyOnUpdate="0" expression="" field="LASTUPDATE"/>
+        <default applyOnUpdate="0" expression="" field="Shape_Leng"/>
+        <default applyOnUpdate="0" expression="" field="Shape_Area"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="PAMS_PIN"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="MUN"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="BLOCK"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="LOT"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="QCODE"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="LASTUPDATE"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="Shape_Leng"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="Shape_Area"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" exp="" field="PAMS_PIN"/>
+        <constraint desc="" exp="" field="MUN"/>
+        <constraint desc="" exp="" field="BLOCK"/>
+        <constraint desc="" exp="" field="LOT"/>
+        <constraint desc="" exp="" field="QCODE"/>
+        <constraint desc="" exp="" field="LASTUPDATE"/>
+        <constraint desc="" exp="" field="Shape_Leng"/>
+        <constraint desc="" exp="" field="Shape_Area"/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+        <columns>
+          <column width="-1" type="field" name="PAMS_PIN" hidden="0"/>
+          <column width="-1" type="field" name="MUN" hidden="0"/>
+          <column width="-1" type="field" name="BLOCK" hidden="0"/>
+          <column width="-1" type="field" name="LOT" hidden="0"/>
+          <column width="-1" type="field" name="QCODE" hidden="0"/>
+          <column width="-1" type="field" name="LASTUPDATE" hidden="0"/>
+          <column width="-1" type="field" name="Shape_Leng" hidden="0"/>
+          <column width="-1" type="field" name="Shape_Area" hidden="0"/>
+          <column width="-1" type="actions" hidden="1"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field name="BLOCK" editable="1"/>
+        <field name="LASTUPDATE" editable="1"/>
+        <field name="LOT" editable="1"/>
+        <field name="MUN" editable="1"/>
+        <field name="PAMS_PIN" editable="1"/>
+        <field name="QCODE" editable="1"/>
+        <field name="Shape_Area" editable="1"/>
+        <field name="Shape_Leng" editable="1"/>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="BLOCK"/>
+        <field labelOnTop="0" name="LASTUPDATE"/>
+        <field labelOnTop="0" name="LOT"/>
+        <field labelOnTop="0" name="MUN"/>
+        <field labelOnTop="0" name="PAMS_PIN"/>
+        <field labelOnTop="0" name="QCODE"/>
+        <field labelOnTop="0" name="Shape_Area"/>
+        <field labelOnTop="0" name="Shape_Leng"/>
+      </labelOnTop>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields/>
+      <previewExpression>PAMS_PIN</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer maxScale="0" minScale="1e+8" type="vector" autoRefreshEnabled="0" refreshOnNotifyMessage="" refreshOnNotifyEnabled="0" geometry="No geometry" hasScaleBasedVisibilityFlag="0" autoRefreshTime="0" readOnly="0">
+      <id>proposed_assessments_as_of_april_18th_eb1429cb_78e9_4bf0_a4e9_d9c7a78d7e9f</id>
+      <datasource>file:../data/proposed-assessments-as-of-april-18th.csv?type=csv&amp;geomType=none&amp;subsetIndex=no&amp;watchFile=no</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>proposed-assessments-as-of-april-18th</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+        <links/>
+      </resourceMetadata>
+      <customproperties/>
+      <provider encoding="UTF-8">delimitedtext</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <fieldConfiguration>
+        <field name="BlockNo">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LotNo">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="QualCode(s)">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="PropLocation">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="PropClass(s)">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SalesDate">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SalePrice">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NU&#xa;Code">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="2017 Assmt&#xa;Taxable">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="2017 Assmt&#xa;Exempt">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="2017 Assmt&#xa;Total">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="2017 Taxes&#xa;Total">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="VCS">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Year&#xa;Built">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Design">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Square&#xa;Footage">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="2018 Assmt&#xa;Taxable">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="2018 Assmt&#xa;Exempt">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="2018 Assmt&#xa;Total">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="2018 Taxes&#xa;Estimated">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="pams_pin_temp">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="pams_pin">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="BlockNo"/>
+        <alias index="1" name="" field="LotNo"/>
+        <alias index="2" name="" field="QualCode(s)"/>
+        <alias index="3" name="" field="PropLocation"/>
+        <alias index="4" name="" field="PropClass(s)"/>
+        <alias index="5" name="" field="SalesDate"/>
+        <alias index="6" name="" field="SalePrice"/>
+        <alias index="7" name="" field="NU&#xa;Code"/>
+        <alias index="8" name="" field="2017 Assmt&#xa;Taxable"/>
+        <alias index="9" name="" field="2017 Assmt&#xa;Exempt"/>
+        <alias index="10" name="" field="2017 Assmt&#xa;Total"/>
+        <alias index="11" name="" field="2017 Taxes&#xa;Total"/>
+        <alias index="12" name="" field="VCS"/>
+        <alias index="13" name="" field="Year&#xa;Built"/>
+        <alias index="14" name="" field="Design"/>
+        <alias index="15" name="" field="Square&#xa;Footage"/>
+        <alias index="16" name="" field="2018 Assmt&#xa;Taxable"/>
+        <alias index="17" name="" field="2018 Assmt&#xa;Exempt"/>
+        <alias index="18" name="" field="2018 Assmt&#xa;Total"/>
+        <alias index="19" name="" field="2018 Taxes&#xa;Estimated"/>
+        <alias index="20" name="" field="pams_pin_temp"/>
+        <alias index="21" name="" field="pams_pin"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default applyOnUpdate="0" expression="" field="BlockNo"/>
+        <default applyOnUpdate="0" expression="" field="LotNo"/>
+        <default applyOnUpdate="0" expression="" field="QualCode(s)"/>
+        <default applyOnUpdate="0" expression="" field="PropLocation"/>
+        <default applyOnUpdate="0" expression="" field="PropClass(s)"/>
+        <default applyOnUpdate="0" expression="" field="SalesDate"/>
+        <default applyOnUpdate="0" expression="" field="SalePrice"/>
+        <default applyOnUpdate="0" expression="" field="NU&#xa;Code"/>
+        <default applyOnUpdate="0" expression="" field="2017 Assmt&#xa;Taxable"/>
+        <default applyOnUpdate="0" expression="" field="2017 Assmt&#xa;Exempt"/>
+        <default applyOnUpdate="0" expression="" field="2017 Assmt&#xa;Total"/>
+        <default applyOnUpdate="0" expression="" field="2017 Taxes&#xa;Total"/>
+        <default applyOnUpdate="0" expression="" field="VCS"/>
+        <default applyOnUpdate="0" expression="" field="Year&#xa;Built"/>
+        <default applyOnUpdate="0" expression="" field="Design"/>
+        <default applyOnUpdate="0" expression="" field="Square&#xa;Footage"/>
+        <default applyOnUpdate="0" expression="" field="2018 Assmt&#xa;Taxable"/>
+        <default applyOnUpdate="0" expression="" field="2018 Assmt&#xa;Exempt"/>
+        <default applyOnUpdate="0" expression="" field="2018 Assmt&#xa;Total"/>
+        <default applyOnUpdate="0" expression="" field="2018 Taxes&#xa;Estimated"/>
+        <default applyOnUpdate="0" expression="" field="pams_pin_temp"/>
+        <default applyOnUpdate="0" expression="" field="pams_pin"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="BlockNo"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="LotNo"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="QualCode(s)"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="PropLocation"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="PropClass(s)"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="SalesDate"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="SalePrice"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="NU&#xa;Code"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="2017 Assmt&#xa;Taxable"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="2017 Assmt&#xa;Exempt"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="2017 Assmt&#xa;Total"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="2017 Taxes&#xa;Total"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="VCS"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="Year&#xa;Built"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="Design"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="Square&#xa;Footage"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="2018 Assmt&#xa;Taxable"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="2018 Assmt&#xa;Exempt"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="2018 Assmt&#xa;Total"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="2018 Taxes&#xa;Estimated"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="pams_pin_temp"/>
+        <constraint unique_strength="0" notnull_strength="0" constraints="0" exp_strength="0" field="pams_pin"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" exp="" field="BlockNo"/>
+        <constraint desc="" exp="" field="LotNo"/>
+        <constraint desc="" exp="" field="QualCode(s)"/>
+        <constraint desc="" exp="" field="PropLocation"/>
+        <constraint desc="" exp="" field="PropClass(s)"/>
+        <constraint desc="" exp="" field="SalesDate"/>
+        <constraint desc="" exp="" field="SalePrice"/>
+        <constraint desc="" exp="" field="NU&#xa;Code"/>
+        <constraint desc="" exp="" field="2017 Assmt&#xa;Taxable"/>
+        <constraint desc="" exp="" field="2017 Assmt&#xa;Exempt"/>
+        <constraint desc="" exp="" field="2017 Assmt&#xa;Total"/>
+        <constraint desc="" exp="" field="2017 Taxes&#xa;Total"/>
+        <constraint desc="" exp="" field="VCS"/>
+        <constraint desc="" exp="" field="Year&#xa;Built"/>
+        <constraint desc="" exp="" field="Design"/>
+        <constraint desc="" exp="" field="Square&#xa;Footage"/>
+        <constraint desc="" exp="" field="2018 Assmt&#xa;Taxable"/>
+        <constraint desc="" exp="" field="2018 Assmt&#xa;Exempt"/>
+        <constraint desc="" exp="" field="2018 Assmt&#xa;Total"/>
+        <constraint desc="" exp="" field="2018 Taxes&#xa;Estimated"/>
+        <constraint desc="" exp="" field="pams_pin_temp"/>
+        <constraint desc="" exp="" field="pams_pin"/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="proposed_assessments_as_of_april_18th_eb1429cb_78e9_4bf0_a4e9_d9c7a78d7e9f"/>
+    <layer id="parcels_shp_jc_25b9f1ae_d5eb_425c_90f8_51bd05a12bd7"/>
+    <layer id="parcels_shp_jc_af4686ec_892f_49a6_b3b3_07893d189259"/>
+  </layerorder>
+  <properties>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+    </PositionPrecision>
+    <PAL>
+      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+    </PAL>
+    <Gui>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+    </Gui>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <Measurement>
+      <DistanceUnits type="QString"></DistanceUnits>
+      <AreaUnits type="QString"></AreaUnits>
+    </Measurement>
+    <Measure>
+      <Ellipsoid type="QString">WGS84</Ellipsoid>
+    </Measure>
+  </properties>
+  <visibility-presets/>
+  <transformContext/>
+  <Annotations/>
+  <Layouts/>
+</qgis>

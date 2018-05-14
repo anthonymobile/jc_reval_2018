@@ -36,6 +36,12 @@ python assessment_cleaner.py --infile data/proposed-assessments-as-of-april-18th
 
 ## Gallery
 
+#### First map (14 May 2018)
+
+A (very) quick (and dirty) look at the impact of the revaluation plotting the ratio of 2018 to 2017 assessments by parcel. While downtown has gotten the lion's share of attention over big increases in assessments, there are clearly large areas elsewhere in the city that have seen big increases in assessed value, particularly the area of Bergen-Lafayette around Lafayette Park and The Heights east of Palisade Avenue.
+
+![Assessment Ratio 2018 to 2017](gallery/jc-1.png)
+s
 ## Related Work
 
 - Dan Goldin has a great notebook [here](https://github.com/dangoldin/jersey-city-tax-assessment) that plots the April 18 release on a Google Maps basemap. 
