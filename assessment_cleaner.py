@@ -37,20 +37,13 @@ for col,type in zip(data_frame.columns, data_frame.dtypes):
 
 # 3. compute the Pams_pin field
 
-data_frame['pams_pin_new'] = np.nan
-list(data_frame)
+data_frame['pams_pin_new'] = ('0906_' + data_frame['BlockNo'].map(str) + '_' + str(data_frame['LotNo']) + '_' + data_frame['QualCode(s)'].map(str) )
 
-for index,row in data_frame.iterrows():
-
-    if not row['QualCode(s)']:
-        row['pams_pin_new']= ('0906_' + str(row['BlockNo']) + '_' + str(row['LotNo']))
-        print row['pams_pin_new']
-    else:
-        row['pams_pin_new'] = ('0906_' + str(row['BlockNo']) + '_' + str(row['LotNo']) + '_' + row['QualCode(s)'])
-        print row['pams_pin_new']
+# clean trailing underscores for those without QualCode(s)
+data_frame['pams_pin_new'] = data_frame['pams_pin_new'].map(lambda x: x.rstrip('_'))
 
 
-list(data_frame)
+
 # 4. write the new file
 
 if args.outfile:
