@@ -37,12 +37,10 @@ for col,type in zip(data_frame.columns, data_frame.dtypes):
 
 # 3. compute the Pams_pin field
 
-data_frame['pams_pin_new'] = ('0906_' + data_frame['BlockNo'].map(str) + '_' + str(data_frame['LotNo']) + '_' + data_frame['QualCode(s)'].map(str) )
+data_frame['pams_pin_temp'] = ('0906_' + data_frame['BlockNo'].astype('int').astype('str') + '_' + data_frame['LotNo'].map(str) + '_' + data_frame['QualCode(s)'].map(str) )
 
 # clean trailing underscores for those without QualCode(s)
-data_frame['pams_pin_new'] = data_frame['pams_pin_new'].map(lambda x: x.rstrip('_'))
-
-
+data_frame['pams_pin'] = data_frame['pams_pin'].str.rstrip('_ ')
 
 # 4. write the new file
 
